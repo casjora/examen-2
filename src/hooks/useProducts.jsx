@@ -1,4 +1,5 @@
-import { useReducer } from "react"; 
+import { useReducer,useEffect } from "react"; 
+import axios from "axios";
 
 const initialState = {
     products: null,

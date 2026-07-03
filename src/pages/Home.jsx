@@ -1,10 +1,12 @@
 import React from 'react';
 import useProducts from '../hooks/useProducts'; 
-import Appbar from '../components/Appbars';
+import Appbar from '../components/Appbar';
 import Footer from '../components/Footer';
-const Home = () => {
-    const { products, loading, errors } = useProducts('https://fakestoreapi.com/products');
+import ProductCard from '../components/ProductCard'
 
+
+const Home = () => {
+    const { products, loading, error } = useProducts('https://fakestoreapi.com/products');
     if (loading) return <div className="text-center mt-10">Loading...</div>;
     if (error) return <div className="text-center mt-10 text-red-500">Error: {error}</div>; 
 

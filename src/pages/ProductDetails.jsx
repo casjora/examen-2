@@ -1,5 +1,5 @@
-import { useParams } from 'react-router'; // Hook useParams para obtener los parámetros de la URL
-import useProduct from '../hooks/useProductss'; // Hook personalizado para obtener los detalles del producto
+import { useParams } from 'react-router-dom'; // Hook useParams para obtener los parámetros de la URL
+import useProduct from '../hooks/useProducts'; // Hook personalizado para obtener los detalles del producto
 import AppBar from '../components/Appbar';   // Componente AppBar
 import Footer from '../components/Footer';  // Componente Footer 
 
